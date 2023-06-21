@@ -139,6 +139,7 @@ ScrollTrigger.create({
     setTimeout(() => {
       animateFrom("#world-com", 1, 45, 0, 100);
       colorChange("#9003fc", "#c7c7c7");
+      hide("#p5i1"), hide("#p5i2"), hide("#p5i3"), hide("#p5i4"), hide("#p5i5");
       animateFrom("#heading1", 1, 30, 0, -50),
         animateFrom("#heading2", 1, 30, 0, -50),
         animateFrom("#text1", 1, 30, 0, -30),
@@ -176,6 +177,8 @@ ScrollTrigger.create({
       animateFrom("#p4i3", -1, 30, 0, -40),
       animateFrom("#p4i4", -1, 45, 0, 100),
       animateFrom("#p4i5", -1, 45, 0, 100);
+    hide("#p5i1"), hide("#p5i2"), hide("#p5i3"), hide("#p5i4"), hide("#p5i5");
+
     setTimeout(() => {
       colorChange("#562dfa", "#30038a");
       animateFrom("#p2i1", 1, 45, 0, 40), animateFrom("#p2i2", 1, -45, 0, -50);
@@ -402,5 +405,19 @@ ScrollTrigger.create({
         animateFrom("#p7i2", 1, 45, 0, 100),
         animateFrom("#entrepreneur", 1, 45, 0, 100);
     }, 200);
+  },
+});
+
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  // nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    700: {
+      items: 1,
+    },
   },
 });

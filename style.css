@@ -6,8 +6,14 @@ body {
   /* height: 700vh; */
   max-height: 100vh;
   display: flex;
+  flex-direction: row;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+}
+.mobile {
+  height: 100vh;
+  width: 100%;
+  display: none;
 }
 .left-div {
   width: 45%;
@@ -273,4 +279,259 @@ p {
 .dotsstro6,
 .dotsstro7 {
   stroke: rgb(177, 177, 177);
+}
+
+@media screen and (max-width: 600px) {
+  .owl-dots {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+  }
+  .home {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    overflow: hidden;
+  }
+  .top-div {
+    height: 50%;
+    width: 100%;
+    position: relative;
+  }
+  .bottom-div {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    z-index: 10;
+    color: white;
+  }
+
+  .item1 > .top-div {
+    background-color: #c7c7c7;
+  }
+  .item1 > .bottom-div {
+    background-color: #9003fc;
+  }
+
+  .item2 > .top-div {
+    background-color: #30038a;
+  }
+  .item2 > .bottom-div {
+    background-color: #562dfa;
+  }
+  .item3 > .top-div {
+    background-color: #1f1973;
+  }
+  .item3 > .bottom-div {
+    background-color: #07024f;
+  }
+  .item4 > .top-div {
+    background-color: #08121a;
+  }
+  .item4 > .bottom-div {
+    background-color: #002a4d;
+  }
+  .item5 > .top-div {
+    background-color: #04bfe0;
+  }
+  .item5 > .bottom-div {
+    background-color: #023dc7;
+  }
+  .item6 > .top-div {
+    background-color: #1f1973;
+  }
+  .item6 > .bottom-div {
+    background-color: #020fc7;
+  }
+  .item7 > .top-div {
+    background-color: #26ab24;
+  }
+  .item7 > .bottom-div {
+    background-color: #267339;
+  }
+
+  #t1i1 {
+    z-index: 1;
+    width: 60%;
+    position: absolute;
+    top: 5%;
+    left: -5%;
+  }
+  #t1i2 {
+    width: 60%;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+  }
+
+  #t2i1 {
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+  }
+  #t2i2 {
+    width: 45%;
+    position: absolute;
+    top: 0;
+    right: 2%;
+  }
+  #t3i1 {
+    width: 55%;
+    position: absolute;
+    top: 30%;
+    left: -4%;
+  }
+  #t3i2 {
+    width: 47%;
+    position: absolute;
+    top: -25%;
+    right: 2%;
+  }
+
+  #t4i1 {
+    width: 40%;
+    position: absolute;
+    top: -10%;
+    left: 0%;
+  }
+  #t4i2 {
+    width: 40%;
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+  }
+
+  #t4i3 {
+    width: 45%;
+    position: absolute;
+    top: -5%;
+    right: 15%;
+  }
+
+  #t4i4 {
+    width: 15%;
+    position: absolute;
+    top: -20%;
+    right: 2%;
+  }
+  #t4i5 {
+    width: 30%;
+    position: absolute;
+    bottom: -15%;
+    right: -10%;
+  }
+
+  #t5i1 {
+    width: 33%;
+    position: absolute;
+    top: -20%;
+    left: 1%;
+  }
+  #t5i2 {
+    width: 33%;
+    position: absolute;
+    top: -5%;
+    left: 35%;
+  }
+
+  #t5i3 {
+    width: 33%;
+    position: absolute;
+    top: 33%;
+    right: 1%;
+  }
+
+  #t5i4 {
+    width: 33%;
+    position: absolute;
+    bottom: -20%;
+    left: 1%;
+  }
+  #t5i5 {
+    width: 33%;
+    position: absolute;
+    bottom: -40%;
+    left: 35%;
+  }
+
+  #t6i1 {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+  }
+  #t6i2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #t7i1 {
+    width: 70%;
+    position: absolute;
+    left: 0%;
+    z-index: 2;
+    bottom: -20%;
+  }
+
+  #t7i2 {
+    width: 45%;
+    position: absolute;
+    right: 5%;
+    bottom: -15%;
+  }
+
+  #best-award {
+    left: 5%;
+    top: -7%;
+    width: 65%;
+    z-index: 200;
+    position: absolute;
+    border-radius: 8px;
+  }
+  #world {
+    left: 5%;
+    top: -7%;
+    width: 65%;
+    z-index: 200;
+    position: absolute;
+    border-radius: 8px;
+    border: 2px solid #9003fc;
+  }
+  .owl-dot span {
+    background: rgba(130, 130, 130, 0.541) !important;
+  }
+  .active span {
+    background: rgb(255, 255, 255) !important;
+  }
+  .bottom-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bottom-div > h1 {
+    margin: 5px;
+  }
+  .bottom-div > div {
+    margin: 20px 0 5px 5px;
+  }
+  .bottom-div > div > strong {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .bottom-div > p {
+    margin: 5px;
+  }
+  .coming-soon {
+    margin-left: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+  }
 }
