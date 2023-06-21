@@ -252,7 +252,7 @@ ScrollTrigger.create({
       animateFrom("#p5i5", -1, 45, 0, 100);
     setTimeout(() => {
       colorChange("#002a4d", "#08121a");
-
+      hide("#p5i1"), hide("#p5i2"), hide("#p5i3"), hide("#p5i4"), hide("#p5i5");
       animateFrom("#p4i1", 1, 30, 0, -80),
         animateFrom("#p4i2", 1, 45, 0, -50),
         animateFrom("#p4i3", 1, 30, 0, -40),
