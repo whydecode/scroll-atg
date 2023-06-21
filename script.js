@@ -133,6 +133,7 @@ ScrollTrigger.defaults({
 ScrollTrigger.create({
   trigger: ".page0",
   onEnterBack: function () {
+    hide("#p3i1"), hide("#p3i2");
     strokeChange(".dotsstro2", "grey");
     animateFrom("#p2i1", -1, 45, 0, 40), animateFrom("#p2i2", -1, -45, 0, -50);
     setTimeout(() => {
@@ -201,6 +202,7 @@ ScrollTrigger.create({
   onEnterBack: function () {
     strokeChange(".dotsstro4", "grey");
     decreaseIndex();
+    hide("#p5i1"), hide("#p5i2"), hide("#p5i3"), hide("#p5i4"), hide("#p5i5");
     animateFrom("#heading1", 1, 30, 0, -50),
       animateFrom("#heading2", 1, 30, 0, -50),
       animateFrom("#text1", 1, 30, 0, -30),
