@@ -330,11 +330,6 @@ ScrollTrigger.create({
         animateFrom("#text1", 1, 30, 0, -30),
         animateFrom("#text2", 1, 30, 0, -30),
         animateFrom("#text3", 1, 30, 0, 100);
-      animateFrom("#p5i1", 1, 30, 0, -80),
-        animateFrom("#p5i2", 1, 45, 0, -50),
-        animateFrom("#p5i3", 1, 30, 0, -40),
-        animateFrom("#p5i4", 1, 45, 0, 100),
-        animateFrom("#p5i5", 1, 45, 0, 100);
     }, 200);
   },
   onEnterBack: function () {
@@ -366,7 +361,11 @@ ScrollTrigger.create({
       animateFrom("#text1", 1, 30, 0, -30),
       animateFrom("#text2", 1, 30, 0, -30),
       animateFrom("#text3", 1, 30, 0, 100);
-
+    animateFrom("#p5i1", -1, 30, 0, -80),
+      animateFrom("#p5i2", -1, 45, 0, -50),
+      animateFrom("#p5i3", -1, 30, 0, -40),
+      animateFrom("#p5i4", -1, 45, 0, 100),
+      animateFrom("#p5i5", -1, 45, 0, 100);
     setTimeout(() => {
       animateFrom("#p6i1", 1, 45, 0, 100), animateFrom("#p6i2", 1, 45, 0, 100);
     }, 200);
